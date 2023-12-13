@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internations</title>
+
+    <style>
+        body{
+            font: normal 15pt 'Times New Roman';
+            background-color: rgb(182, 221, 255);
+        }
+
+        div.box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        form{
+            border-radius: 10px;
+            background-color: rgb(132, 248, 209);
+            box-shadow: 5px 5px 10px;
+            padding: 20px;
+        }
+
+        .frmElement{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Brasa ou estranja?</h1>
+        <form>
+            Informe o nome do seu país:
+            <br>
+            <input type="text" name="txtNac" id="txtNac" class="frmElement">
+            <br>
+            <input type="button" value="Averiguar" id="btn1" class="frmElement">
+            <div id="nac" class="frmElement"></div>
+        </form>
+    </div>
+    
+    <script>
+        var btn = document.querySelector('input#btn1');
+
+        btn.addEventListener('click', averiguar);
+
+        function averiguar(){
+            var pais = document.querySelector('input#txtNac');
+            var nac = document.querySelector('div#nac');
+            if(pais.value.toUpperCase() == 'BRASIL')
+            {
+                nac.innerHTML = `Você é <strong>BRASILEIRO</strong>!`;
+            }
+            else{
+                nac.innerHTML = `Você é <strong>ESTRANGEIRO</strong>!`
+            }
+        }
+    </script>
+</body>
+</html>
