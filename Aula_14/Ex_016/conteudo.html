@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="estilo.css">
 
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Vamos contar</h1>
     </header>
 
     <section>
-        <div>
-            Testando
+        <div id="dados">
+            <p>
+                <label>Início: </label>
+                <input type="number" name="inicio" id="txtIn">
+            </p>
+            
+            <p>
+                <label>Fim: </label>
+                <input type="number" name="fim" id="txtEnd">
+            </p>
+
+            <p>
+                <label>Passo: </label>
+                <input type="number" name="passo" id="txtPas">
+            </p>
+
+            <p>
+                <input type="button" id="btnCont" value="Contar" onclick="contar()">
+            </p>
         </div>
-        <div>
-            Olá
+        <div id="res">
+            Preparando contagem...
         </div>
     </section>
     
