@@ -28,3 +28,16 @@ footer{
 input{
     font: normal 15pt Arial;
 }
+
+input#txtN{
+    width: 100px;
+}
+
+select{
+    font: normal 18pt Arial;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
