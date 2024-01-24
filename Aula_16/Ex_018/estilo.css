@@ -33,3 +33,16 @@ input{
 input#txtN{
     width: 150px;
 }
+
+input#btnF{
+    width: 150px;
+}
+
+select{
+    width: 275px;
+    margin-bottom: 15px;
+}
+
+option{
+    font: normal 18pt Arial;
+}
